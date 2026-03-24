@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Full Regression Suite" tests="8" failures="1" errors="0" skipped="1" time="5.631">
+    <testsuite name="com.example.OrderServiceTest" tests="4" failures="1" errors="0" skipped="0" time="2.841"
+               timestamp="2024-03-10T11:00:00">
+        <testcase name="shouldCreateOrder" classname="com.example.OrderServiceTest" time="0.512"/>
+        <testcase name="shouldCancelOrder" classname="com.example.OrderServiceTest" time="0.433"/>
+        <testcase name="shouldCalculateTotal" classname="com.example.OrderServiceTest" time="0.321"/>
+        <testcase name="shouldApplyDiscount" classname="com.example.OrderServiceTest" time="1.575">
+            <failure message="Expected total 85.00 but was 100.00">
+                java.lang.AssertionError: Expected total 85.00 but was 100.00
+                at org.junit.Assert.assertEquals(Assert.java:115)
+                at com.example.OrderServiceTest.shouldApplyDiscount(OrderServiceTest.java:95)
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="com.example.InventoryServiceTest" tests="4" failures="0" errors="0" skipped="1" time="2.790"
+               timestamp="2024-03-10T11:00:03">
+        <testcase name="shouldTrackStock" classname="com.example.InventoryServiceTest" time="0.612"/>
+        <testcase name="shouldReserveItems" classname="com.example.InventoryServiceTest" time="0.834"/>
+        <testcase name="shouldReleaseReservation" classname="com.example.InventoryServiceTest" time="0.921"/>
+        <testcase name="shouldSyncWithWarehouse" classname="com.example.InventoryServiceTest" time="0.423">
+            <skipped message="Warehouse API unavailable in test environment"/>
+        </testcase>
+    </testsuite>
+</testsuites>

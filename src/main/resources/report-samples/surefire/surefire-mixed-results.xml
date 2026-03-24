@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd"
+           version="3.0"
+           name="com.example.AuthServiceTest"
+           tests="6" failures="1" errors="1" skipped="1"
+           time="4.521"
+           timestamp="2024-03-10T09:10:00">
+    <properties>
+        <property name="java.version" value="17.0.6"/>
+        <property name="spring.profiles.active" value="test"/>
+    </properties>
+
+    <testcase name="shouldAuthenticateValidUser" classname="com.example.AuthServiceTest" time="0.823"/>
+
+    <testcase name="shouldRejectInvalidPassword" classname="com.example.AuthServiceTest" time="0.654"/>
+
+    <testcase name="shouldGenerateJwtToken" classname="com.example.AuthServiceTest" time="1.203">
+        <failure message="Expected token expiry 3600 but was 1800" type="org.opentest4j.AssertionFailedError">
+            org.opentest4j.AssertionFailedError: Expected token expiry 3600 but was 1800
+            at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+            at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:153)
+            at com.example.AuthServiceTest.shouldGenerateJwtToken(AuthServiceTest.java:88)
+            at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+        </failure>
+    </testcase>
+
+    <testcase name="shouldRefreshToken" classname="com.example.AuthServiceTest" time="0.921">
+        <error message="RedisConnectionException: Unable to connect to Redis"
+               type="io.lettuce.core.RedisConnectionException">
+            io.lettuce.core.RedisConnectionException: Unable to connect to Redis at localhost:6379
+            at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+            at com.example.AuthServiceTest.shouldRefreshToken(AuthServiceTest.java:112)
+            at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+        </error>
+    </testcase>
+
+    <testcase name="shouldRevokeToken" classname="com.example.AuthServiceTest" time="0.312">
+        <skipped message="Token revocation not implemented yet"/>
+    </testcase>
+
+    <testcase name="shouldLogoutUser" classname="com.example.AuthServiceTest" time="0.608"/>
+
+    <system-out><![CDATA[
+[INFO] Starting AuthServiceTest
+[INFO] Spring context loaded in 1.2s
+[INFO] Test database initialized
+    ]]></system-out>
+    <system-err><![CDATA[
+[WARN] Redis connection failed, falling back to in-memory store
+    ]]></system-err>
+</testsuite>

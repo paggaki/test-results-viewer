@@ -49,13 +49,6 @@ public class JUnitReportParser implements ReportParser {
         if (event == XMLStreamConstants.START_ELEMENT) {
 
           switch (reader.getLocalName()) {
-            case "testsuites":
-              currentSuite = new TestSuite();
-              currentSuite.setName(reader.getAttributeValue(null, "name"));
-              currentSuite.setTestCases(new ArrayList<>());
-              suites.add(currentSuite);
-              break;
-
             case "testsuite":
               currentSuite = new TestSuite();
               currentSuite.setName(reader.getAttributeValue(null, "name"));
@@ -79,6 +72,12 @@ public class JUnitReportParser implements ReportParser {
               if (currentCase != null) {
                 currentCase.setStatus(TestStatus.FAILED);
                 currentCase.setErrorMessage(reader.getAttributeValue(null, "message"));
+                if (reader.hasNext()) {
+                  reader.next();
+                  if (reader.getEventType() == XMLStreamConstants.CHARACTERS) {
+                    currentCase.setStackTrace(reader.getText().trim());
+                  }
+                }
               }
               break;
 

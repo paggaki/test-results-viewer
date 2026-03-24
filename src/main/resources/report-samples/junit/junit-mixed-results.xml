@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.PaymentServiceTest" tests="6" failures="2" errors="1" skipped="1" time="3.812"
+           timestamp="2024-03-10T10:05:00">
+    <testcase name="shouldProcessPayment" classname="com.example.PaymentServiceTest" time="0.543"/>
+    <testcase name="shouldRefundPayment" classname="com.example.PaymentServiceTest" time="0.321"/>
+    <testcase name="shouldRejectInvalidCard" classname="com.example.PaymentServiceTest" time="0.892">
+        <failure message="Expected status REJECTED but was APPROVED">
+            java.lang.AssertionError: Expected status REJECTED but was APPROVED
+            at org.junit.Assert.fail(Assert.java:89)
+            at com.example.PaymentServiceTest.shouldRejectInvalidCard(PaymentServiceTest.java:78)
+            at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        </failure>
+    </testcase>
+    <testcase name="shouldHandleTimeout" classname="com.example.PaymentServiceTest" time="1.204">
+        <failure message="Payment gateway did not respond within 1000ms">
+            java.lang.AssertionError: Payment gateway did not respond within 1000ms
+            at org.junit.Assert.fail(Assert.java:89)
+            at com.example.PaymentServiceTest.shouldHandleTimeout(PaymentServiceTest.java:112)
+        </failure>
+    </testcase>
+    <testcase name="shouldConnectToGateway" classname="com.example.PaymentServiceTest" time="0.612">
+        <error message="Connection refused: payment-gateway:8080">
+            java.net.ConnectException: Connection refused: payment-gateway:8080
+            at java.net.PlainSocketImpl.socketConnect(Native Method)
+            at com.example.PaymentServiceTest.shouldConnectToGateway(PaymentServiceTest.java:45)
+        </error>
+    </testcase>
+    <testcase name="shouldProcessRefundForDeletedUser" classname="com.example.PaymentServiceTest" time="0.240">
+        <skipped message="Feature not yet implemented"/>
+    </testcase>
+</testsuite>

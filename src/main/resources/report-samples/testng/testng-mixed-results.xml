@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="CheckoutServiceTest" tests="7" failures="2" errors="0" skipped="2"
+               time="5.874" timestamp="2024-03-10T10:15:00"
+               hostname="build-agent-01">
+
+        <testcase name="verifyCheckoutWithCreditCard" classname="com.example.CheckoutServiceTest"
+                  time="0.923" status="PASS"/>
+
+        <testcase name="verifyCheckoutWithPayPal" classname="com.example.CheckoutServiceTest"
+                  time="0.812" status="PASS"/>
+
+        <testcase name="verifyCheckoutWithInvalidCoupon" classname="com.example.CheckoutServiceTest"
+                  time="1.204" status="FAIL">
+            <failure message="Expected discount 20% but was 0%" type="java.lang.AssertionError">
+                java.lang.AssertionError: Expected discount 20% but was 0%
+                at org.testng.Assert.fail(Assert.java:96)
+                at org.testng.Assert.assertEquals(Assert.java:127)
+                at com.example.CheckoutServiceTest.verifyCheckoutWithInvalidCoupon(CheckoutServiceTest.java:67)
+            </failure>
+        </testcase>
+
+        <testcase name="verifyCheckoutEmptyCart" classname="com.example.CheckoutServiceTest"
+                  time="0.543" status="FAIL">
+            <failure message="NullPointerException: cart items list is null" type="java.lang.NullPointerException">
+                java.lang.NullPointerException: cart items list is null
+                at com.example.CheckoutService.validateCart(CheckoutService.java:45)
+                at com.example.CheckoutServiceTest.verifyCheckoutEmptyCart(CheckoutServiceTest.java:89)
+            </failure>
+        </testcase>
+
+        <testcase name="verifyCheckoutWithExpiredCard" classname="com.example.CheckoutServiceTest"
+                  time="0.321" status="SKIP">
+            <skipped message="Payment provider sandbox unavailable"/>
+        </testcase>
+
+        <testcase name="verifyCheckoutInternationalShipping" classname="com.example.CheckoutServiceTest"
+                  time="0.412" status="SKIP">
+            <skipped message="International shipping tests disabled in CI"/>
+        </testcase>
+
+        <testcase name="verifyCheckoutReceiptEmail" classname="com.example.CheckoutServiceTest"
+                  time="1.659" status="PASS"/>
+
+    </testsuite>
+
+    <testsuite name="CartServiceTest" tests="4" failures="0" errors="0" skipped="0"
+               time="2.341" timestamp="2024-03-10T10:15:06"
+               hostname="build-agent-01">
+        <testcase name="verifyAddToCart" classname="com.example.CartServiceTest"
+                  time="0.512" status="PASS"/>
+        <testcase name="verifyRemoveFromCart" classname="com.example.CartServiceTest"
+                  time="0.634" status="PASS"/>
+        <testcase name="verifyCartTotal" classname="com.example.CartServiceTest"
+                  time="0.721" status="PASS"/>
+        <testcase name="verifyCartPersistence" classname="com.example.CartServiceTest"
+                  time="0.474" status="PASS"/>
+    </testsuite>
+</testsuites>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="com.example.EmptySuiteTest" tests="0" failures="0" errors="0" skipped="0" time="0.001"
+               timestamp="2024-03-10T12:00:00">
+    </testsuite>
+    <testsuite name="com.example.EdgeCaseTest" tests="4" failures="0" errors="0" skipped="0" time="0.500"
+               timestamp="2024-03-10T12:00:01">
+        <testcase name="shouldHandleNullInput" classname="com.example.EdgeCaseTest"/>
+        <testcase name="shouldHandleEmptyString" classname="com.example.EdgeCaseTest" time="0"/>
+        <testcase name="shouldHandleVeryLongString" classname="com.example.EdgeCaseTest" time="0.499">
+            <failure>
+                java.lang.AssertionError
+                at com.example.EdgeCaseTest.shouldHandleVeryLongString(EdgeCaseTest.java:55)
+            </failure>
+        </testcase>
+        <testcase name="shouldHandleSpecialChars_&amp;_unicode" classname="com.example.EdgeCaseTest" time="0.001"/>
+    </testsuite>
+</testsuites>

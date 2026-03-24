@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="ProductServiceTest" tests="5" failures="0" errors="0" skipped="0"
+               time="3.102" timestamp="2024-03-10T10:00:00"
+               hostname="build-agent-01">
+        <testcase name="verifyProductCreation" classname="com.example.ProductServiceTest"
+                  time="0.832" status="PASS"/>
+        <testcase name="verifyProductUpdate" classname="com.example.ProductServiceTest"
+                  time="0.541" status="PASS"/>
+        <testcase name="verifyProductDeletion" classname="com.example.ProductServiceTest"
+                  time="0.612" status="PASS"/>
+        <testcase name="verifyProductSearch" classname="com.example.ProductServiceTest"
+                  time="0.701" status="PASS"/>
+        <testcase name="verifyProductPricing" classname="com.example.ProductServiceTest"
+                  time="0.416" status="PASS"/>
+    </testsuite>
+</testsuites>
