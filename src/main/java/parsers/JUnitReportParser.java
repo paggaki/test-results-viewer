@@ -5,8 +5,6 @@ import models.TestCase;
 import models.TestReport;
 import models.TestStatus;
 import models.TestSuite;
-import models.TestSuite;
-import models.TestSuite;
 
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamConstants;
