@@ -1,27 +1,25 @@
 package models;
 
 import java.util.List;
-import java.util.List;
-import java.util.List;
 
 public class TestSuite {
 
-    private String name;
-    private List<TestCase> testCases;
+  private String name;
+  private List<TestCase> testCases;
 
-    public String getName() {
-        return name;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public List<TestCase> getTestCases() {
-        return testCases;
-    }
+  public List<TestCase> getTestCases() {
+    return testCases;
+  }
 
-    public void setTestCases(List<TestCase> testCases) {
-        this.testCases = testCases;
-    }
+  public void setTestCases(List<TestCase> testCases) {
+    this.testCases = testCases;
+  }
 }

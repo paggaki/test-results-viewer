@@ -20,10 +20,12 @@
             <plugin>
                 <groupId>com.diffplug.spotless</groupId>
                 <artifactId>spotless-maven-plugin</artifactId>
-                <version>2.46.0</version>
+                <version>3.4.0</version>
                 <configuration>
                     <java>
-                        <googleJavaFormat/>
+                        <googleJavaFormat>
+                            <version>1.35.0</version>
+                        </googleJavaFormat>
                         <removeUnusedImports/>
                     </java>
                 </configuration>

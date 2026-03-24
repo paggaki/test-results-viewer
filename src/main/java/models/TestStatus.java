@@ -1,8 +1,8 @@
 package models;
 
 public enum TestStatus {
-    PASSED,
-    FAILED,
-    SKIPPED,
-    ERROR
+  PASSED,
+  FAILED,
+  SKIPPED,
+  ERROR
 }
