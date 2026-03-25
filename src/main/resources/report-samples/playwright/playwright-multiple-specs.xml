@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites id="" name="" tests="12" failures="1" skipped="2" errors="0" time="67.443">
+
+    <testsuite name="tests/navigation.spec.ts" tests="4" failures="0" skipped="0" errors="0" time="18.234"
+               timestamp="2024-03-10T11:00:00">
+        <testcase name="should navigate to home page" classname="tests/navigation.spec.ts" time="2.341"/>
+        <testcase name="should navigate to products page" classname="tests/navigation.spec.ts" time="3.812"/>
+        <testcase name="should navigate to about page" classname="tests/navigation.spec.ts" time="4.123"/>
+        <testcase name="should show 404 for unknown routes" classname="tests/navigation.spec.ts" time="7.958"/>
+    </testsuite>
+
+    <testsuite name="tests/search.spec.ts" tests="4" failures="1" skipped="1" errors="0" time="24.112"
+               timestamp="2024-03-10T11:00:18">
+        <testcase name="should search for existing product" classname="tests/search.spec.ts" time="4.532"/>
+        <testcase name="should show no results for unknown product" classname="tests/search.spec.ts" time="3.841"/>
+        <testcase name="should filter search results by category" classname="tests/search.spec.ts" time="9.201">
+            <failure message="Error: Timed out 5000ms waiting for expect(locator).toHaveCount()">
+                Error: Timed out 5000ms waiting for expect(locator).toHaveCount()
+
+                Locator: locator('.product-card')
+                Expected: 3
+                Received: 12
+
+                Call log:
+                - expect.toHaveCount with timeout 5000ms
+                - waiting for locator('.product-card') to have count 3
+
+                at tests/search.spec.ts:88:36
+                at tests/search.spec.ts:79:9
+            </failure>
+        </testcase>
+        <testcase name="should search with special characters" classname="tests/search.spec.ts" time="0.312">
+            <skipped message="Special character handling not yet implemented"/>
+        </testcase>
+    </testsuite>
+
+    <testsuite name="tests/profile.spec.ts" tests="4" failures="0" skipped="1" errors="0" time="25.097"
+               timestamp="2024-03-10T11:00:42">
+        <testcase name="should display user profile" classname="tests/profile.spec.ts" time="5.123"/>
+        <testcase name="should update profile details" classname="tests/profile.spec.ts" time="7.841"/>
+        <testcase name="should change password successfully" classname="tests/profile.spec.ts" time="8.912"/>
+        <testcase name="should upload profile picture" classname="tests/profile.spec.ts" time="0.421">
+            <skipped message="File upload not supported in headless mode"/>
+        </testcase>
+    </testsuite>
+
+</testsuites>

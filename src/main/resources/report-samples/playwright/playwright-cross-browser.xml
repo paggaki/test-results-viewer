@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites id="" name="" tests="9" failures="2" skipped="0" errors="1" time="89.231">
+
+    <testsuite name="tests/responsive.spec.ts > chromium" tests="3" failures="0" skipped="0" errors="0" time="21.432"
+               timestamp="2024-03-10T12:00:00">
+        <testcase name="should display correctly on desktop" classname="tests/responsive.spec.ts > chromium"
+                  time="6.123"/>
+        <testcase name="should display correctly on tablet" classname="tests/responsive.spec.ts > chromium"
+                  time="7.841"/>
+        <testcase name="should display correctly on mobile" classname="tests/responsive.spec.ts > chromium"
+                  time="7.468"/>
+    </testsuite>
+
+    <testsuite name="tests/responsive.spec.ts > firefox" tests="3" failures="1" skipped="0" errors="0" time="34.521"
+               timestamp="2024-03-10T12:00:21">
+        <testcase name="should display correctly on desktop" classname="tests/responsive.spec.ts > firefox"
+                  time="8.234"/>
+        <testcase name="should display correctly on tablet" classname="tests/responsive.spec.ts > firefox" time="9.102">
+            <failure message="Error: expect(locator).toBeVisible() - Hamburger menu not visible on tablet viewport">
+                Error: expect(locator).toBeVisible()
+
+                Locator: locator('.hamburger-menu')
+                Expected: visible
+                Received: hidden
+
+                Call log:
+                - expect.toBeVisible with timeout 5000ms
+                - waiting for locator('.hamburger-menu')
+                - locator resolved to &lt;button class="hamburger-menu" style="display: none;"&gt;
+
+                at tests/responsive.spec.ts:54:38
+                at tests/responsive.spec.ts:48:9
+            </failure>
+        </testcase>
+        <testcase name="should display correctly on mobile" classname="tests/responsive.spec.ts > firefox"
+                  time="17.185"/>
+    </testsuite>
+
+    <testsuite name="tests/responsive.spec.ts > webkit" tests="3" failures="1" skipped="0" errors="1" time="33.278"
+               timestamp="2024-03-10T12:00:55">
+        <testcase name="should display correctly on desktop" classname="tests/responsive.spec.ts > webkit"
+                  time="7.921"/>
+        <testcase name="should display correctly on tablet" classname="tests/responsive.spec.ts > webkit" time="8.634"/>
+        <testcase name="should display correctly on mobile" classname="tests/responsive.spec.ts > webkit" time="16.723">
+            <failure message="Error: Browser closed unexpectedly during test execution">
+                Error: Browser closed unexpectedly during test execution
+
+                at WebKit._connectToTransport (webkit.js:234)
+                at tests/responsive.spec.ts:71:12
+            </failure>
+        </testcase>
+    </testsuite>
+
+</testsuites>

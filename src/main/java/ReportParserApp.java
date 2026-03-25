@@ -18,7 +18,8 @@ public class ReportParserApp {
     InputStream is =
         XmlUtils.toResettableStream(
             Files.newInputStream(
-                Path.of("src/main/resources/report-samples/testng/testng-mixed-results.xml")));
+                Path.of(
+                    "src/main/resources/report-samples/playwright/playwright-all-passing.xml")));
 
     try (is) {
       if (parser.supports(is)) {

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites id="" name="" tests="5" failures="0" skipped="0" errors="0" time="12.345">
+    <testsuite name="tests/login.spec.ts" tests="5" failures="0" skipped="0" errors="0" time="12.345"
+               timestamp="2024-03-10T10:00:00">
+        <testcase name="should display login page" classname="tests/login.spec.ts" time="1.203"/>
+        <testcase name="should login with valid credentials" classname="tests/login.spec.ts" time="3.512"/>
+        <testcase name="should redirect to dashboard after login" classname="tests/login.spec.ts" time="2.841"/>
+        <testcase name="should remember me checkbox persist session" classname="tests/login.spec.ts" time="2.934"/>
+        <testcase name="should logout successfully" classname="tests/login.spec.ts" time="1.855"/>
+    </testsuite>
+</testsuites>

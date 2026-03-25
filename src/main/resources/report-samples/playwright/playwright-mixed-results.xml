@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites id="" name="" tests="7" failures="2" skipped="1" errors="0" time="34.812">
+    <testsuite name="tests/checkout.spec.ts" tests="7" failures="2" skipped="1" errors="0" time="34.812"
+               timestamp="2024-03-10T10:05:00">
+
+        <testcase name="should add item to cart" classname="tests/checkout.spec.ts" time="3.201"/>
+
+        <testcase name="should display cart total correctly" classname="tests/checkout.spec.ts" time="4.532"/>
+
+        <testcase name="should apply discount coupon" classname="tests/checkout.spec.ts" time="6.841">
+            <failure message="Error: Timed out 5000ms waiting for expect(locator).toHaveText()">
+                Error: Timed out 5000ms waiting for expect(locator).toHaveText()
+
+                Locator: locator('.discount-badge')
+                Expected string: "20% OFF"
+                Received string: ""
+
+                Call log:
+                - expect.toHaveText with timeout 5000ms
+                - waiting for locator('.discount-badge')
+                - locator resolved to &lt;span class="discount-badge"&gt;&lt;/span&gt;
+                - unexpected value ""
+
+                at tests/checkout.spec.ts:67:34
+                at tests/checkout.spec.ts:60:9
+            </failure>
+        </testcase>
+
+        <testcase name="should complete checkout with credit card" classname="tests/checkout.spec.ts" time="9.123">
+            <failure message="Error: expect(received).toBe(expected) - Order confirmation number not found">
+                Error: expect(received).toBe(expected)
+
+                Expected: true
+                Received: false
+
+                Locator: locator('.order-confirmation')
+                Expected element to be visible
+
+                Call log:
+                - expect.toBeVisible with timeout 5000ms
+                - waiting for locator('.order-confirmation')
+                - locator resolved to 0 elements
+
+                at tests/checkout.spec.ts:112:45
+                at tests/checkout.spec.ts:98:9
+            </failure>
+        </testcase>
+
+        <testcase name="should complete checkout with PayPal" classname="tests/checkout.spec.ts" time="0.241">
+            <skipped message="PayPal sandbox unavailable in CI environment"/>
+        </testcase>
+
+        <testcase name="should send order confirmation email" classname="tests/checkout.spec.ts" time="5.632"/>
+
+        <testcase name="should display order history" classname="tests/checkout.spec.ts" time="5.242"/>
+
+    </testsuite>
+</testsuites>
