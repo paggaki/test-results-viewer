@@ -27,7 +27,7 @@ pipeline {
         }
         stage("Print Parser Results"){
            steps{
-                       sh "mvn exec:java -Dexec.mainClass='ReportParserApp' -Dexec.args='${params.Available_Reports}'"
+                       sh "mvn clean install exec:java -Dexec.mainClass='ReportParserApp' -Dexec.args='${params.Available_Reports}'"
            }
         }
     }
