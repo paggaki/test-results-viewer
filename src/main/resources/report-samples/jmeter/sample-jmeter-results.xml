@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testResults version="1.2">
+    <httpSample t="390" lt="285" ts="1774720782420" s="true" lb="Search API" rc="200" rm="OK" tn="Thread Group 1-5"
+                dt="text" by="2087"/>
+    <sample t="338" lt="305" ts="1774720783420" s="false" lb="Login API" rc="400" rm="Error" tn="Thread Group 1-1"
+            dt="text" by="7451"/>
+    <httpSample t="131" lt="52" ts="1774720784420" s="true" lb="Search API" rc="200" rm="OK" tn="Thread Group 1-3"
+                dt="text" by="2423"/>
+    <httpSample t="410" lt="208" ts="1774720785420" s="false" lb="Search API" rc="401" rm="Error" tn="Thread Group 1-2"
+                dt="text" by="3111"/>
+    <httpSample t="300" lt="280" ts="1774720786420" s="true" lb="Search API" rc="200" rm="OK" tn="Thread Group 1-1"
+                dt="text" by="2085"/>
+    <httpSample t="508" lt="423" ts="1774720787420" s="true" lb="Home" rc="200" rm="OK" tn="Thread Group 1-3" dt="text"
+                by="7407"/>
+    <httpSample t="456" lt="148" ts="1774720788420" s="true" lb="Search API" rc="200" rm="OK" tn="Thread Group 1-2"
+                dt="text" by="5065"/>
+    <httpSample t="216" lt="88" ts="1774720789420" s="true" lb="Dashboard API" rc="200" rm="OK" tn="Thread Group 1-5"
+                dt="text" by="6917"/>
+    <httpSample t="186" lt="70" ts="1774720790420" s="true" lb="Dashboard API" rc="200" rm="OK" tn="Thread Group 1-4"
+                dt="text" by="6047"/>
+    <httpSample t="174" lt="136" ts="1774720791420" s="true" lb="Search API" rc="200" rm="OK" tn="Thread Group 1-4"
+                dt="text" by="4187"/>
+    <httpSample t="459" lt="134" ts="1774720792420" s="false" lb="Login API" rc="500" rm="Error" tn="Thread Group 1-3"
+                dt="text" by="5080"/>
+    <httpSample t="128" lt="64" ts="1774720793420" s="true" lb="Dashboard API" rc="200" rm="OK" tn="Thread Group 1-4"
+                dt="text" by="6488"/>
+    <httpSample t="193" lt="162" ts="1774720794420" s="true" lb="Dashboard API" rc="200" rm="OK" tn="Thread Group 1-1"
+                dt="text" by="6801"/>
+    <httpSample t="533" lt="345" ts="1774720795420" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-1"
+                dt="text" by="7818"/>
+    <httpSample t="129" lt="65" ts="1774720796420" s="true" lb="Dashboard API" rc="200" rm="OK" tn="Thread Group 1-3"
+                dt="text" by="5882"/>
+    <httpSample t="180" lt="111" ts="1774720797420" s="true" lb="Search API" rc="200" rm="OK" tn="Thread Group 1-3"
+                dt="text" by="4815"/>
+    <httpSample t="315" lt="210" ts="1774720798420" s="true" lb="Home" rc="200" rm="OK" tn="Thread Group 1-2" dt="text"
+                by="6693"/>
+    <httpSample t="118" lt="108" ts="1774720799420" s="true" lb="Dashboard API" rc="200" rm="OK" tn="Thread Group 1-1"
+                dt="text" by="4748"/>
+    <httpSample t="253" lt="165" ts="1774720800420" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-1"
+                dt="text" by="2316"/>
+    <httpSample t="138" lt="76" ts="1774720801420" s="true" lb="Dashboard API" rc="200" rm="OK" tn="Thread Group 1-1"
+                dt="text" by="4193"/>
+    <httpSample t="517" lt="106" ts="1774720802420" s="true" lb="Dashboard API" rc="200" rm="OK" tn="Thread Group 1-3"
+                dt="text" by="6168"/>
+    <httpSample t="369" lt="249" ts="1774720803420" s="true" lb="Home" rc="200" rm="OK" tn="Thread Group 1-4" dt="text"
+                by="2937"/>
+    <httpSample t="567" lt="478" ts="1774720804420" s="true" lb="Home" rc="200" rm="OK" tn="Thread Group 1-5" dt="text"
+                by="6169"/>
+    <httpSample t="540" lt="452" ts="1774720805420" s="false" lb="Search API" rc="400" rm="Error" tn="Thread Group 1-1"
+                dt="text" by="4180"/>
+    <httpSample t="509" lt="328" ts="1774720806420" s="false" lb="Dashboard API" rc="500" rm="Error"
+                tn="Thread Group 1-2" dt="text" by="4620"/>
+    <httpSample t="314" lt="313" ts="1774720807420" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-3"
+                dt="text" by="1042"/>
+    <httpSample t="136" lt="66" ts="1774720808420" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-4"
+                dt="text" by="3984"/>
+    <httpSample t="199" lt="76" ts="1774720809420" s="true" lb="Dashboard API" rc="200" rm="OK" tn="Thread Group 1-3"
+                dt="text" by="4172"/>
+    <httpSample t="476" lt="140" ts="1774720810420" s="true" lb="Dashboard API" rc="200" rm="OK" tn="Thread Group 1-2"
+                dt="text" by="4448"/>
+    <httpSample t="207" lt="55" ts="1774720811420" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-5"
+                dt="text" by="7483"/>
+    <httpSample t="250" lt="204" ts="1774720812420" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-1"
+                dt="text" by="6582"/>
+    <httpSample t="267" lt="75" ts="1774720813420" s="false" lb="Login API" rc="401" rm="Error" tn="Thread Group 1-5"
+                dt="text" by="2580"/>
+    <httpSample t="441" lt="312" ts="1774720814420" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-4"
+                dt="text" by="6923"/>
+    <httpSample t="297" lt="112" ts="1774720815420" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-1"
+                dt="text" by="4956"/>
+    <httpSample t="597" lt="521" ts="1774720816420" s="true" lb="Dashboard API" rc="200" rm="OK" tn="Thread Group 1-1"
+                dt="text" by="6867"/>
+    <httpSample t="387" lt="153" ts="1774720817420" s="true" lb="Search API" rc="200" rm="OK" tn="Thread Group 1-3"
+                dt="text" by="4504"/>
+    <httpSample t="415" lt="162" ts="1774720818420" s="true" lb="Home" rc="200" rm="OK" tn="Thread Group 1-5" dt="text"
+                by="2845"/>
+    <httpSample t="328" lt="142" ts="1774720819420" s="true" lb="Search API" rc="200" rm="OK" tn="Thread Group 1-3"
+                dt="text" by="4755"/>
+    <httpSample t="250" lt="172" ts="1774720820420" s="true" lb="Search API" rc="200" rm="OK" tn="Thread Group 1-2"
+                dt="text" by="6789"/>
+    <httpSample t="312" lt="153" ts="1774720821420" s="false" lb="Dashboard API" rc="401" rm="Error"
+                tn="Thread Group 1-5" dt="text" by="7642"/>
+    <httpSample t="531" lt="488" ts="1774720822420" s="true" lb="Search API" rc="200" rm="OK" tn="Thread Group 1-4"
+                dt="text" by="4553"/>
+    <httpSample t="258" lt="50" ts="1774720823420" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-2"
+                dt="text" by="2782"/>
+    <httpSample t="410" lt="82" ts="1774720824420" s="true" lb="Search API" rc="200" rm="OK" tn="Thread Group 1-3"
+                dt="text" by="7520"/>
+    <httpSample t="336" lt="303" ts="1774720825420" s="false" lb="Home" rc="500" rm="Error" tn="Thread Group 1-4"
+                dt="text" by="7697"/>
+    <httpSample t="561" lt="371" ts="1774720826420" s="false" lb="Home" rc="400" rm="Error" tn="Thread Group 1-4"
+                dt="text" by="1894"/>
+    <httpSample t="597" lt="68" ts="1774720827420" s="true" lb="Home" rc="200" rm="OK" tn="Thread Group 1-2" dt="text"
+                by="7138"/>
+    <httpSample t="375" lt="224" ts="1774720828420" s="true" lb="Dashboard API" rc="200" rm="OK" tn="Thread Group 1-3"
+                dt="text" by="6826"/>
+    <httpSample t="419" lt="238" ts="1774720829420" s="true" lb="Dashboard API" rc="200" rm="OK" tn="Thread Group 1-1"
+                dt="text" by="6593"/>
+    <httpSample t="519" lt="345" ts="1774720830420" s="true" lb="Home" rc="200" rm="OK" tn="Thread Group 1-2" dt="text"
+                by="2126"/>
+    <httpSample t="514" lt="493" ts="1774720831420" s="false" lb="Login API" rc="400" rm="Error" tn="Thread Group 1-4"
+                dt="text" by="7071"/>
+    <httpSample t="154" lt="108" ts="1774720832420" s="false" lb="Login API" rc="401" rm="Error" tn="Thread Group 1-1"
+                dt="text" by="6046"/>
+    <httpSample t="152" lt="126" ts="1774720833420" s="true" lb="Search API" rc="200" rm="OK" tn="Thread Group 1-3"
+                dt="text" by="5427"/>
+    <httpSample t="235" lt="233" ts="1774720834420" s="true" lb="Search API" rc="200" rm="OK" tn="Thread Group 1-1"
+                dt="text" by="1843"/>
+    <httpSample t="440" lt="118" ts="1774720835420" s="false" lb="Dashboard API" rc="401" rm="Error"
+                tn="Thread Group 1-1" dt="text" by="3034"/>
+    <httpSample t="190" lt="126" ts="1774720836420" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-3"
+                dt="text" by="7331"/>
+    <httpSample t="275" lt="51" ts="1774720837420" s="false" lb="Home" rc="500" rm="Error" tn="Thread Group 1-2"
+                dt="text" by="2142"/>
+    <httpSample t="250" lt="230" ts="1774720838420" s="false" lb="Login API" rc="500" rm="Error" tn="Thread Group 1-4"
+                dt="text" by="5648"/>
+    <httpSample t="330" lt="86" ts="1774720839420" s="true" lb="Search API" rc="200" rm="OK" tn="Thread Group 1-1"
+                dt="text" by="1949"/>
+    <httpSample t="442" lt="340" ts="1774720840420" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-4"
+                dt="text" by="7325"/>
+    <httpSample t="209" lt="103" ts="1774720841420" s="true" lb="Home" rc="200" rm="OK" tn="Thread Group 1-5" dt="text"
+                by="5734"/>
+    <httpSample t="401" lt="193" ts="1774720842420" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-1"
+                dt="text" by="1956"/>
+    <httpSample t="112" lt="90" ts="1774720843420" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-3"
+                dt="text" by="7074"/>
+    <httpSample t="596" lt="480" ts="1774720844420" s="false" lb="Search API" rc="400" rm="Error" tn="Thread Group 1-5"
+                dt="text" by="1029"/>
+    <httpSample t="286" lt="192" ts="1774720845420" s="true" lb="Home" rc="200" rm="OK" tn="Thread Group 1-2" dt="text"
+                by="4248"/>
+    <httpSample t="222" lt="63" ts="1774720846420" s="false" lb="Search API" rc="401" rm="Error" tn="Thread Group 1-1"
+                dt="text" by="1002"/>
+    <httpSample t="484" lt="96" ts="1774720847420" s="true" lb="Home" rc="200" rm="OK" tn="Thread Group 1-2" dt="text"
+                by="3950"/>
+    <httpSample t="362" lt="300" ts="1774720848420" s="true" lb="Dashboard API" rc="200" rm="OK" tn="Thread Group 1-3"
+                dt="text" by="3853"/>
+    <httpSample t="358" lt="341" ts="1774720849420" s="true" lb="Home" rc="200" rm="OK" tn="Thread Group 1-2" dt="text"
+                by="4977"/>
+    <httpSample t="179" lt="50" ts="1774720850420" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-3"
+                dt="text" by="6447"/>
+    <httpSample t="600" lt="256" ts="1774720851420" s="true" lb="Home" rc="200" rm="OK" tn="Thread Group 1-1" dt="text"
+                by="7582"/>
+    <httpSample t="552" lt="137" ts="1774720852420" s="true" lb="Search API" rc="200" rm="OK" tn="Thread Group 1-1"
+                dt="text" by="1605"/>
+    <httpSample t="590" lt="538" ts="1774720853420" s="true" lb="Search API" rc="200" rm="OK" tn="Thread Group 1-1"
+                dt="text" by="1479"/>
+    <httpSample t="514" lt="319" ts="1774720854420" s="false" lb="Home" rc="400" rm="Error" tn="Thread Group 1-1"
+                dt="text" by="5682"/>
+    <httpSample t="236" lt="207" ts="1774720855420" s="false" lb="Home" rc="401" rm="Error" tn="Thread Group 1-4"
+                dt="text" by="5784"/>
+    <httpSample t="371" lt="93" ts="1774720856420" s="true" lb="Search API" rc="200" rm="OK" tn="Thread Group 1-4"
+                dt="text" by="5588"/>
+    <httpSample t="333" lt="195" ts="1774720857420" s="true" lb="Home" rc="200" rm="OK" tn="Thread Group 1-3" dt="text"
+                by="1194"/>
+    <httpSample t="175" lt="69" ts="1774720858420" s="false" lb="Dashboard API" rc="400" rm="Error"
+                tn="Thread Group 1-5" dt="text" by="6879"/>
+    <httpSample t="577" lt="405" ts="1774720859420" s="false" lb="Search API" rc="401" rm="Error" tn="Thread Group 1-2"
+                dt="text" by="4749"/>
+    <httpSample t="238" lt="172" ts="1774720860420" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-5"
+                dt="text" by="3497"/>
+    <httpSample t="266" lt="176" ts="1774720861420" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-3"
+                dt="text" by="7312"/>
+    <httpSample t="577" lt="217" ts="1774720862420" s="true" lb="Dashboard API" rc="200" rm="OK" tn="Thread Group 1-2"
+                dt="text" by="7663"/>
+    <httpSample t="494" lt="360" ts="1774720863420" s="true" lb="Home" rc="200" rm="OK" tn="Thread Group 1-1" dt="text"
+                by="3098"/>
+    <httpSample t="404" lt="239" ts="1774720864420" s="true" lb="Home" rc="200" rm="OK" tn="Thread Group 1-5" dt="text"
+                by="5844"/>
+    <httpSample t="588" lt="523" ts="1774720865420" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-4"
+                dt="text" by="3018"/>
+    <httpSample t="191" lt="171" ts="1774720866420" s="true" lb="Dashboard API" rc="200" rm="OK" tn="Thread Group 1-2"
+                dt="text" by="7249"/>
+    <httpSample t="206" lt="180" ts="1774720867420" s="false" lb="Home" rc="400" rm="Error" tn="Thread Group 1-4"
+                dt="text" by="6505"/>
+    <httpSample t="439" lt="158" ts="1774720868420" s="false" lb="Dashboard API" rc="401" rm="Error"
+                tn="Thread Group 1-3" dt="text" by="4371"/>
+    <httpSample t="329" lt="242" ts="1774720869420" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-1"
+                dt="text" by="2102"/>
+    <httpSample t="224" lt="194" ts="1774720870420" s="true" lb="Dashboard API" rc="200" rm="OK" tn="Thread Group 1-3"
+                dt="text" by="6699"/>
+    <httpSample t="118" lt="107" ts="1774720871420" s="false" lb="Home" rc="400" rm="Error" tn="Thread Group 1-2"
+                dt="text" by="1792"/>
+    <httpSample t="574" lt="222" ts="1774720872420" s="true" lb="Dashboard API" rc="200" rm="OK" tn="Thread Group 1-3"
+                dt="text" by="6787"/>
+    <httpSample t="276" lt="190" ts="1774720873420" s="true" lb="Dashboard API" rc="200" rm="OK" tn="Thread Group 1-1"
+                dt="text" by="7033"/>
+    <httpSample t="337" lt="162" ts="1774720874420" s="false" lb="Dashboard API" rc="401" rm="Error"
+                tn="Thread Group 1-4" dt="text" by="5877"/>
+    <httpSample t="567" lt="266" ts="1774720875420" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-3"
+                dt="text" by="5190"/>
+    <httpSample t="200" lt="69" ts="1774720876420" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-2"
+                dt="text" by="2958"/>
+    <httpSample t="306" lt="139" ts="1774720877420" s="true" lb="Search API" rc="200" rm="OK" tn="Thread Group 1-1"
+                dt="text" by="5718"/>
+    <httpSample t="292" lt="156" ts="1774720878420" s="true" lb="Login API" rc="200" rm="OK" tn="Thread Group 1-3"
+                dt="text" by="5335"/>
+    <httpSample t="424" lt="129" ts="1774720879420" s="true" lb="Dashboard API" rc="200" rm="OK" tn="Thread Group 1-4"
+                dt="text" by="6422"/>
+    <httpSample t="255" lt="66" ts="1774720880420" s="false" lb="Login API" rc="500" rm="Error" tn="Thread Group 1-2"
+                dt="text" by="3350"/>
+    <httpSample t="96" lt="89" ts="1774720881420" s="false" lb="Home" rc="401" rm="Error" tn="Thread Group 1-3"
+                dt="text" by="5719"/>
+</testResults>

@@ -15,12 +15,17 @@ node("") {
 pipeline {
     agent any
     stages{
-        stage("Print"){
+        stage("Debug"){
             steps{
                 script{
                          echo "Selected report: ${params.Available_Reports}"
                }
             }
+        }
+        stage("Print Parser Results"){
+           steps{
+                       sh "mvn exec:java -Dexec.mainClass='ReportParserApp' -Dexec.args='${params.Available_Reports}'"
+           }
         }
     }
 }

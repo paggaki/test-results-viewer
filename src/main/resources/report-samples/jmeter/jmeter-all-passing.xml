@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+    <httpSample t="243" ts="1710061200000" s="true" lb="GET /api/users" rc="200" rm="OK" tn="Thread Group 1-1" dt="text"
+                by="1024"/>
+    <httpSample t="312" ts="1710061200243" s="true" lb="GET /api/users/1" rc="200" rm="OK" tn="Thread Group 1-1"
+                dt="text" by="512"/>
+    <httpSample t="421" ts="1710061200555" s="true" lb="POST /api/users" rc="201" rm="Created" tn="Thread Group 1-2"
+                dt="text" by="256"/>
+    <httpSample t="198" ts="1710061200976" s="true" lb="PUT /api/users/1" rc="200" rm="OK" tn="Thread Group 1-2"
+                dt="text" by="256"/>
+    <httpSample t="154" ts="1710061201174" s="true" lb="DELETE /api/users/1" rc="204" rm="No Content"
+                tn="Thread Group 1-1" dt="text" by="0"/>
+</testResults>

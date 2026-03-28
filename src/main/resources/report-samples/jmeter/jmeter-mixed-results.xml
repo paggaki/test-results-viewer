@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+    <httpSample t="312" ts="1710061200000" s="true" lb="GET /api/products" rc="200" rm="OK" tn="Thread Group 1-1"
+                dt="text" by="4096"/>
+    <httpSample t="1823" ts="1710061200312" s="false" lb="POST /api/orders" rc="500" rm="Internal Server Error"
+                tn="Thread Group 1-1" dt="text" by="128">
+        <responseData>{"error": "Database connection timeout after 1500ms"}</responseData>
+    </httpSample>
+    <httpSample t="423" ts="1710061202135" s="true" lb="GET /api/orders" rc="200" rm="OK" tn="Thread Group 1-2"
+                dt="text" by="2048"/>
+    <httpSample t="5012" ts="1710061202558" s="false" lb="GET /api/reports" rc="503" rm="Service Unavailable"
+                tn="Thread Group 1-2" dt="text" by="64"/>
+    <httpSample t="234" ts="1710061207570" s="true" lb="GET /api/health" rc="200" rm="OK" tn="Thread Group 1-1"
+                dt="text" by="32"/>
+    <httpSample t="892" ts="1710061207804" s="false" lb="POST /api/payments" rc="422" rm="Unprocessable Entity"
+                tn="Thread Group 1-3" dt="text" by="256"/>
+    <httpSample t="178" ts="1710061208696" s="true" lb="GET /api/categories" rc="200" rm="OK" tn="Thread Group 1-3"
+                dt="text" by="1024"/>
+</testResults>

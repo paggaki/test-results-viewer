@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+
+    <httpSample t="1243" ts="1710061200000" s="true" lb="User Registration Flow" rc="200" rm="OK" tn="Thread Group 1-1"
+                dt="text" by="2048">
+        <httpSample t="312" ts="1710061200000" s="true" lb="GET /api/register" rc="200" rm="OK" tn="Thread Group 1-1"
+                    dt="text" by="512"/>
+        <httpSample t="421" ts="1710061200312" s="true" lb="POST /api/register" rc="201" rm="Created"
+                    tn="Thread Group 1-1" dt="text" by="256"/>
+        <httpSample t="510" ts="1710061200733" s="true" lb="POST /api/verify-email" rc="200" rm="OK"
+                    tn="Thread Group 1-1" dt="text" by="128"/>
+    </httpSample>
+
+    <httpSample t="2841" ts="1710061201243" s="false" lb="Checkout Flow" rc="500" rm="Internal Server Error"
+                tn="Thread Group 1-2" dt="text" by="1024">
+        <httpSample t="432" ts="1710061201243" s="true" lb="GET /api/cart" rc="200" rm="OK" tn="Thread Group 1-2"
+                    dt="text" by="512"/>
+        <httpSample t="521" ts="1710061201675" s="true" lb="POST /api/cart/items" rc="201" rm="Created"
+                    tn="Thread Group 1-2" dt="text" by="256"/>
+        <httpSample t="1888" ts="1710061202196" s="false" lb="POST /api/checkout" rc="500" rm="Internal Server Error"
+                    tn="Thread Group 1-2" dt="text" by="128"/>
+    </httpSample>
+
+    <httpSample t="891" ts="1710061204084" s="true" lb="Product Search Flow" rc="200" rm="OK" tn="Thread Group 1-3"
+                dt="text" by="4096">
+        <httpSample t="321" ts="1710061204084" s="true" lb="GET /api/products" rc="200" rm="OK" tn="Thread Group 1-3"
+                    dt="text" by="2048"/>
+        <httpSample t="298" ts="1710061204405" s="true" lb="GET /api/products?q=shoes" rc="200" rm="OK"
+                    tn="Thread Group 1-3" dt="text" by="1024"/>
+        <httpSample t="272" ts="1710061204703" s="true" lb="GET /api/products/42" rc="200" rm="OK" tn="Thread Group 1-3"
+                    dt="text" by="512"/>
+    </httpSample>
+
+</testResults>

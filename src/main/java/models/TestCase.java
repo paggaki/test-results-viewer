@@ -6,7 +6,16 @@ public class TestCase {
   private TestStatus status;
   private long duration;
   private String errorMessage;
+  private String result;
   private String stackTrace;
+
+  public String getResult() {
+    return result;
+  }
+
+  public void setResult(String result) {
+    this.result = result;
+  }
 
   public String getStackTrace() {
     return stackTrace;

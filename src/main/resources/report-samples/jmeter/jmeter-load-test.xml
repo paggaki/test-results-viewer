@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+    <httpSample t="189" ts="1710061200000" s="true" lb="GET /api/products" rc="200" rm="OK" tn="Load Test 1-1" dt="text"
+                by="4096"/>
+    <httpSample t="201" ts="1710061200012" s="true" lb="GET /api/products" rc="200" rm="OK" tn="Load Test 1-2" dt="text"
+                by="4096"/>
+    <httpSample t="245" ts="1710061200025" s="true" lb="GET /api/products" rc="200" rm="OK" tn="Load Test 1-3" dt="text"
+                by="4096"/>
+    <httpSample t="312" ts="1710061200038" s="true" lb="GET /api/products" rc="200" rm="OK" tn="Load Test 1-4" dt="text"
+                by="4096"/>
+    <httpSample t="1823" ts="1710061200051" s="false" lb="GET /api/products" rc="503" rm="Service Unavailable"
+                tn="Load Test 1-5" dt="text" by="64"/>
+    <httpSample t="289" ts="1710061200064" s="true" lb="GET /api/products" rc="200" rm="OK" tn="Load Test 1-6" dt="text"
+                by="4096"/>
+    <httpSample t="2341" ts="1710061200077" s="false" lb="GET /api/products" rc="503" rm="Service Unavailable"
+                tn="Load Test 1-7" dt="text" by="64"/>
+    <httpSample t="198" ts="1710061200090" s="true" lb="GET /api/products" rc="200" rm="OK" tn="Load Test 1-8" dt="text"
+                by="4096"/>
+    <httpSample t="221" ts="1710061200103" s="true" lb="GET /api/products" rc="200" rm="OK" tn="Load Test 1-9" dt="text"
+                by="4096"/>
+    <httpSample t="3012" ts="1710061200116" s="false" lb="GET /api/products" rc="504" rm="Gateway Timeout"
+                tn="Load Test 1-10" dt="text" by="64"/>
+
+    <httpSample t="421" ts="1710061200200" s="true" lb="POST /api/orders" rc="201" rm="Created" tn="Load Test 1-1"
+                dt="text" by="256"/>
+    <httpSample t="398" ts="1710061200212" s="true" lb="POST /api/orders" rc="201" rm="Created" tn="Load Test 1-2"
+                dt="text" by="256"/>
+    <httpSample t="1654" ts="1710061200225" s="false" lb="POST /api/orders" rc="500" rm="Internal Server Error"
+                tn="Load Test 1-3" dt="text" by="128"/>
+    <httpSample t="445" ts="1710061200238" s="true" lb="POST /api/orders" rc="201" rm="Created" tn="Load Test 1-4"
+                dt="text" by="256"/>
+    <httpSample t="412" ts="1710061200251" s="true" lb="POST /api/orders" rc="201" rm="Created" tn="Load Test 1-5"
+                dt="text" by="256"/>
+</testResults>
