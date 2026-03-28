@@ -34,6 +34,7 @@ pipeline {
 }
 
 def return_available_reports() {
-    def fileList = findFiles(glob: 'src/main/resources/report-samples/*').collect { it.name }
+    def fileList = findFiles(glob: 'src/main/resources/report-samples/**/*')
+        .collect { it.path.replace('src/main/resources/report-samples/', '') }
     return fileList.join('\n')
 }
