@@ -1,3 +1,4 @@
+import interfaces.ReportParser;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
@@ -18,7 +19,8 @@ public class ReportParserApp {
         XmlUtils.toResettableStream(
             Files.newInputStream(Path.of("src/main/resources/report-samples/" + args[0])));
     ParserRegistry registry = new ParserRegistry();
-    TestReport report = registry.select(is).parse(is);
+    ReportParser parser = registry.select(is);
+    TestReport report = parser.parse(is);
 
     List<TestSuite> testSuites = report.getTestSuites();
     for (TestSuite testSuite : testSuites) {
@@ -27,13 +29,14 @@ public class ReportParserApp {
       long failed = testCases.stream().filter(tc -> tc.getStatus() == TestStatus.FAILED).count();
       long skipped = testCases.stream().filter(tc -> tc.getStatus() == TestStatus.SKIPPED).count();
       long errors = testCases.stream().filter(tc -> tc.getStatus() == TestStatus.ERROR).count();
-      KafkaProducerApp.send("JMeter", testSuite.getName());
+
       String stackTraces =
           testCases.stream()
               .filter(tc -> tc.getStackTrace() != null)
               .map(tc -> tc.getName() + ": " + tc.getStackTrace())
               .collect(Collectors.joining(" | "));
-      System.out.println(
+
+      String results =
           "Test Suite: "
               + testSuite.getName()
               + " | Pass: "
@@ -47,7 +50,10 @@ public class ReportParserApp {
               + " | Stack Trace: "
               + stackTraces
               + " | Total Tests: "
-              + testCases.size());
+              + testCases.size();
+
+      KafkaProducerApp.send(registry.selectTopic(parser), report.getEndTime(), results);
+      System.out.println(results);
     }
   }
 }
