@@ -4,6 +4,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 import java.util.stream.Collectors;
+import kafka.KafkaProducerApp;
 import models.TestCase;
 import models.TestReport;
 import models.TestStatus;
@@ -15,7 +16,8 @@ public class ReportParserApp {
   public static void main(String[] args) throws IOException {
     InputStream is =
         XmlUtils.toResettableStream(
-            Files.newInputStream(Path.of("src/main/resources/report-samples/" + args[0])));
+            Files.newInputStream(
+                Path.of("src/main/resources/report-samples/jmeter/sample-jmeter-results.xml")));
     ParserRegistry registry = new ParserRegistry();
     TestReport report = registry.select(is).parse(is);
 
@@ -26,6 +28,7 @@ public class ReportParserApp {
       long failed = testCases.stream().filter(tc -> tc.getStatus() == TestStatus.FAILED).count();
       long skipped = testCases.stream().filter(tc -> tc.getStatus() == TestStatus.SKIPPED).count();
       long errors = testCases.stream().filter(tc -> tc.getStatus() == TestStatus.ERROR).count();
+      KafkaProducerApp.send("JMeter", testSuite.getName());
       String stackTraces =
           testCases.stream()
               .filter(tc -> tc.getStackTrace() != null)
