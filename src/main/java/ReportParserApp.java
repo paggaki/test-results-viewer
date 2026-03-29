@@ -16,8 +16,7 @@ public class ReportParserApp {
   public static void main(String[] args) throws IOException {
     InputStream is =
         XmlUtils.toResettableStream(
-            Files.newInputStream(
-                Path.of("src/main/resources/report-samples/jmeter/sample-jmeter-results.xml")));
+            Files.newInputStream(Path.of("src/main/resources/report-samples/" + args[0])));
     ParserRegistry registry = new ParserRegistry();
     TestReport report = registry.select(is).parse(is);
 
